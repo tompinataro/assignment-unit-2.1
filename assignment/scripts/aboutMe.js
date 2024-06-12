@@ -1,46 +1,76 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
-let firstName = '';
+let firstName = 'Tom ';
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
-
+let lastName = 'Pinataro';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
-//     (remember, you already have variables for this, can you use those?)
+//     (remember, you already have variables for this, can you use those?) (Duckett p78)
 //     Console log the value of `fullName`
+let fullName = firstName + lastName;
+console.log(fullName);
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
+let luckyNumber = 11;
+console.log(luckyNumber);
 
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
 //     'My name is (full name), and I think (lucky number) is a winner!'.
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
+let introduction = 'My name is fullName, and I think luckyNumber is a winner!';
+console.log(introduction);
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
+let adventurous = true;
+console.log(adventurous);
 
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
+let food = 'Italian';
+console.log(food);
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
+let pets = 0
+console.log(pets);
 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
+let friendsPets = 2
+ console.log(friendsPets);
 
 // 10 - Add two pets to your `pets` variable
+let petsPlus2 = 2
+console.log(petsPlus2);
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
+const allowedPets = 2
+console.log(allowedPets);
 
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
-//      Console log the value of `result`
+//      Console log the value of `result`  (On line 26, we previously let adventurous be true...)
+let result;
+if (adventurous) {
+  result = "Adventures are great!";
+} else {
+  result = "How about we stay home?";
+}
+console.log(result);
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
-//      Console log the value of `diceRoll`
+//      Console log the value of `diceRoll` (On line 13, luckyNumber is 11...)
+let diceRoll = "Try again later.";
+if (luckyNumber === 2 && adventurous) {
+  diceRoll = "Roll the dice!";
+}
+console.log(diceRoll);
 
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -50,7 +80,16 @@ let firstName = '';
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-
+//      (On line, 36 pets = 0 ; and on line 48, const allowedPets = 2)
+let petStatus;
+if (pets < allowedPets) {
+  petStatus = "I can have more pets";
+} else if (pets === allowedPets) {
+  petStatus = "I have enough pets";
+} else if (pets > allowedPets) {
+  petStatus = "Oh no, I have too many pets!";
+}
+console.log(petStatus);
 
 // STRETCH GOALS:
 
@@ -59,6 +98,14 @@ let firstName = '';
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+//      (On line 36, pets = 0 ; and on line 41, friendsPets = 2)
+let mostPets;
+if (pets > friendsPets) {
+  mostPets = pets;
+} else {
+  mostPets = friendsPets;
+}
+console.log(mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -68,10 +115,29 @@ let firstName = '';
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
+//      (On line 14, let luckyNumber = 11;)
+let luckyResult;
+switch (luckyNumber) {
+  case 1:
+    luckyResult = "First is the worst";
+    break;
+  case 2:
+    luckyResult = "Second is the best";
+    break;
+  case 3:
+    luckyResult = "Third is the one with the polka dot dress";
+    break;
+  default:
+    luckyResult = "Luck is what happens when preparation meets opportunity!";
+}
+console.log `luckyResult`
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
+// "We swaw ... a ternary operator (?:) to pick one of two values based on a third value. (Haverbeke, Chapter 1 Summary)
 
-
+// let result;
+// result = adventurous ? "Adventures are great!" : "How about we stay home?";
+// console.log(result);
 
 
 
