@@ -132,8 +132,11 @@ switch (luckyNumber) {
 }
 console.log `luckyResult`
 
+//     The output of console.log on line 133 should be "Luck is what happens when preparation meets opportunity!"
+//     I cannot yet figure this out...
+
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
-// "We swaw ... a ternary operator (?:) to pick one of two values based on a third value. (Haverbeke, Chapter 1 Summary)
+// "We saw ... a ternary operator (?:) to pick one of two values based on a third value. (Haverbeke, Chapter 1 Summary)
 
 // let result;
 // result = adventurous ? "Adventures are great!" : "How about we stay home?";
